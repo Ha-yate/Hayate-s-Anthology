@@ -1,0 +1,478 @@
+:root {
+    --bg: #0d0b08;
+    --text: #e8e0d0;
+    --accent: #c9a84c;
+    --muted: #8a7f6e;
+    --card-bg: #1a1610;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Cormorant Garamond', Georgia, serif;
+  }
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    line-height: 1.8;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 4rem;
+    background-color: var(--bg);
+    border-bottom: 1px solid var(--muted);
+  }
+  
+  .logo {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    color: var(--accent);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+  }
+  
+  nav ul a {
+    text-decoration: none;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 1rem;
+  }
+  
+  nav ul a:hover {
+    color: var(--accent);
+  }
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .hero p {
+    font-size: 0.9rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+  
+  .hero h1 {
+    font-family: var(--font-display);
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero .tagline {
+    font-style: italic;
+    font-size: 1.25rem;
+    color: var(--muted);
+    max-width: 480px;
+    margin-bottom: 2.5rem;
+  }
+  .hero {
+    padding-top: 5rem;
+  }
+  .hero {
+    margin-top: 80px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 2.2rem;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .btn:hover {
+    background: var(--accent);
+    color: var(--bg);
+  }
+  .featured {
+    padding: 7rem 4rem;
+  }
+  
+  .featured h2 {
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .poems-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .poem-card {
+    background: var(--card-bg);
+    border: 1px solid var(--muted);
+    padding: 2.5rem 2rem;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+  
+  .poem-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+  }
+  
+  .poem-card span {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  .poem-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+  
+  .poem-card p {
+    color: var(--muted);
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+  }
+  
+  .poem-card a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  
+  .poem-card a:hover {
+    color: var(--text);
+  }
+  .themes-section {
+    padding: 6rem 4rem;
+    text-align: center;
+    margin-top: 12rem;
+  }
+  
+  .themes-section h2 {
+    font-size: 0.8rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 3rem;
+  }
+  
+  .themes-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .theme-pill {
+    border: 1px solid var(--muted);
+    color: var(--muted);
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: border-color 0.3s, color 0.3s;
+  }
+  
+  .theme-pill:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    cursor: default;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 4rem;
+    border-top: 1px solid var(--muted);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: var(--muted);
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: color 0.3s;
+  }
+  
+  footer a:hover {
+    color: var(--accent);
+  }
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero-content {
+    animation: fadeUp 1.2s ease both;
+  }
+  @media (max-width: 768px) {
+    nav {
+      padding: 1rem 1.5rem;
+    }
+  
+    .nav-links {
+      gap: 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 3rem;
+    }
+  
+    .hero {
+      padding: 2rem 1.5rem;
+    }
+  
+    .featured {
+      padding: 4rem 1.5rem;
+    }
+  
+    .poems-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .themes-section {
+      padding: 4rem 1.5rem;
+    }
+  
+    footer {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+      padding: 2rem 1.5rem;
+    }
+  }
+
+
+
+  .page-hero {
+    padding: 10rem 4rem 5rem;
+    text-align: center;
+    border-bottom: 1px solid var(--muted);
+  }
+  
+  .page-hero p {
+    font-size: 0.8rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+  
+  .page-hero h1 {
+    font-family: var(--font-display);
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--text);
+  }
+
+
+  .about-body {
+    padding: 6rem 4rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .about-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+
+  .photo-placeholder {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background: var(--card-bg);
+    border: 1px solid var(--muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  
+  .small-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+  
+  .about-themes ul {
+    list-style: none;
+    color: var(--muted);
+  }
+  
+  .about-themes ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--muted);
+    font-size: 1rem;
+  }
+  .about-photo {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+  }
+  .about-intro {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    color: var(--text);
+  }
+  
+  .about-text-col p {
+    color: var(--muted);
+    margin-bottom: 1.2rem;
+  }
+  
+  .about-quote {
+    border-left: 2px solid var(--accent);
+    padding-left: 1.5rem;
+    margin: 2.5rem 0;
+  }
+  
+  .about-quote p {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--text);
+  }
+  @media (max-width: 768px) {
+    .page-hero {
+      padding: 8rem 1.5rem 3rem;
+    }
+  
+    .page-hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .about-body {
+      padding: 4rem 1.5rem;
+    }
+  
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+  .contact-intro {
+    font-size: 1.25rem;
+    color: var(--muted);
+    margin-bottom: 3rem;
+    line-height: 1.8;
+  }
+  
+  .contact-note p {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-note span {
+    color: var(--accent);
+    font-size: 0.9rem;
+  }
+  .form-group {
+    margin-bottom: 1.8rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.6rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    background: var(--card-bg);
+    border: 1px solid var(--muted);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    padding: 0.85rem 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+    resize: none;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: var(--accent);
+  }
+  
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: var(--muted);
+  }
+  .form-group select {
+    width: 100%;
+    background: var(--card-bg);
+    border: 1px solid var(--muted);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    padding: 0.85rem 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .form-group select:focus {
+    border-color: var(--accent);
+  }
